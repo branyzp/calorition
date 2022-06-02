@@ -2,18 +2,14 @@ import './App.css';
 import SearchBar from './Components/SearchBar';
 import Home from './Pages/Home';
 import About from './Pages/About';
-import Header from './Components/Header';
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navbar from './Components/Navbar';
-
-const API_ID = process.env.REACT_APP_API_ID;
-const API_KEY = process.env.REACT_APP_API_KEY;
-
-console.log('API_ID is ' + API_ID);
-console.log('API Key is ' + API_KEY);
+import SearchPage from './Pages/SearchPage';
 
 function App() {
+	
+
 	return (
 		<>
 			<BrowserRouter>
@@ -22,6 +18,7 @@ function App() {
 				<Routes>
 					<Route path="/" element={<Home />} />
 					<Route path="about" element={<About />} />
+					<Route path="search" element={<SearchPage />} />
 				</Routes>
 			</BrowserRouter>
 		</>

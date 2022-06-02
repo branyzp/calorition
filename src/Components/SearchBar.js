@@ -1,18 +1,13 @@
 import React from 'react';
-import { Button } from '@mui/material';
-import SendIcon from '@mui/icons-material/Send';
 
-const SearchBar = () => {
+
+const SearchBar = (handleClick) => {
 	return (
-		<form>
+		<form className="searchForm">
 			<input type="text" placeholder="Search a food!" />
-			<Button
-				endIcon={<SendIcon />}
-				onClick={() => alert('Yello')}
-				variant="outlined"
-			>
+			{/* <Button endIcon={<SendIcon />} onClick={handleClick} variant="outlined">
 				Submit
-			</Button>
+			</Button> */}
 		</form>
 	);
 };
