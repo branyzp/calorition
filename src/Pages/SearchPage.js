@@ -39,7 +39,7 @@ const SearchPage = () => {
 				console.log('error');
 			});
 		setTimeout(() => {
-			document.getElementById('nutrients').scrollIntoView();
+			document.getElementById('meals').scrollIntoView();
 		}, 1000);
 		// console.log(mealData);
 	}

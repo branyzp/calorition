@@ -63,7 +63,7 @@ const MealList = ({ mealData }) => {
 					<li>protein: {nutrients?.protein}</li>
 				</ul>
 			</section>
-			<section className="meals">
+			<section id="meals" className="meals">
 				{mealData.meals.map((meal) => {
 					return <Meal className="mealCard" key={meal?.id} meal={meal} />;
 				})}
