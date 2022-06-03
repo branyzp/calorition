@@ -17,7 +17,7 @@ function App() {
 				<Routes>
 					<Route path="/" element={<Home />} />
 					<Route path="about" element={<About />} />
-					<Route path="search" element={<SearchPage />} />
+					<Route path="mealplan" element={<SearchPage />} />
 					<Route path="bmr" element={<BMRcalculator />} />
 				</Routes>
 			</BrowserRouter>

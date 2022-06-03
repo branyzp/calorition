@@ -71,7 +71,7 @@ const BMR = ({ calculatedbmr, goalmetabolicrate, goal, goalDifference }) => {
 			</p>
 
 			<p>
-				proceed to <Link to="/search">Meal Planner page</Link>
+				proceed to <Link to="/mealplan">Meal Planner page</Link>
 			</p>
 		</div>
 	);

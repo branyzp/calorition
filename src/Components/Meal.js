@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 const Meal = ({ meal }) => {
 	const [images, setImages] = useState('');
 
-	const API_KEY = process.env.REACT_APP_API_KEY;
+	const API_KEY = process.env.REACT_APP_API_KEY3;
 	const FOOD_ID_URL = `https://api.spoonacular.com/recipes/${meal.id}/information?apiKey=${API_KEY}&includeNutrition=false`;
 	console.log(FOOD_ID_URL);
 

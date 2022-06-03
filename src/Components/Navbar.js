@@ -13,8 +13,8 @@ const Navbar = () => {
 			</Link>
 			<Link className="NavBarLink" to="/bmr">
 				BMR Calculator
-				</Link>
-			<Link className="NavBarLink" to="/search">
+			</Link>
+			<Link className="NavBarLink" to="/mealplan">
 				Mealplanning
 			</Link>
 		</div>
