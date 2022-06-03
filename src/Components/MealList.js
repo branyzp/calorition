@@ -8,6 +8,7 @@ const MealList = ({ mealData }) => {
 		<div>
 			<section className="nutrients">
 				<h1>your custom macros for today.</h1>
+
 				<ul>
 					<li>calories: {nutrients?.calories?.toFixed(0)}</li>
 					<li>carbohydrates: {nutrients?.carbohydrates}</li>

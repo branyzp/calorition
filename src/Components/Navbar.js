@@ -11,6 +11,9 @@ const Navbar = () => {
 			<Link className="NavBarLink" to="/about">
 				About
 			</Link>
+			<Link className="NavBarLink" to="/bmr">
+				BMR Calculator
+				</Link>
 			<Link className="NavBarLink" to="/search">
 				Mealplanning
 			</Link>

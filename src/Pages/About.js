@@ -4,22 +4,17 @@ const About = () => {
 	return (
 		<div>
 			<h1>about calorition</h1>
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-				veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-				commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-				velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-				occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-				mollit anim id est laborum. <br /> <br />
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-				veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-				commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-				velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-				occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-				mollit anim id est laborum.
-			</p>
+			<h2>
+				calorition is a nutrition app built towards building the connection
+				between people who are new to nutrition and the nutrition knowledge
+				required to make positive changes in their life.
+				<br /> <br />
+				we recognise that you want to improve yourself, yet it might take some
+				time to build up the knowledge essential to facilitate optimal
+				performance.
+				<br /> <br />
+				we are here to help.
+			</h2>
 		</div>
 	);
 };

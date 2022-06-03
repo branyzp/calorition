@@ -1,22 +1,23 @@
 import React, { useEffect } from 'react';
-import SearchBar from '../Components/SearchBar';
 import { useState } from 'react';
 import MealList from '../Components/MealList';
 import { Button } from '@mui/material';
 import SendIcon from '@mui/icons-material/Send';
+import BMRcalculator from './BMRcalculator';
+import { Link } from 'react-router-dom';
 
 const SearchPage = () => {
 	const [mealData, setMealData] = useState('');
 	const [calories, setCalories] = useState(2000);
 	const [diet, setDiet] = useState(null);
 
-	const API_KEY = process.env.REACT_APP_API_KEY3;
+	const API_KEY = process.env.REACT_APP_API_KEY;
 	const MEALPLANNERDAY_URL = `https://api.spoonacular.com/mealplanner/generate?apiKey=${API_KEY}&timeFrame=day&targetCalories=${calories}&diet=${diet}`;
 
 	// console.log('API Key is ' + API_KEY);
 	// console.log('MEALPLANNER URL is ' + MEALPLANNERDAY_URL);
 
-	const handleChange = (e) => {
+	const handleChangeCalories = (e) => {
 		setCalories(e.target.value);
 	};
 
@@ -42,12 +43,16 @@ const SearchPage = () => {
 
 	return (
 		<div className="mealplannerpage">
-			<h1>Meal plans</h1>
-			<p></p>
+			<h1>meal planning on the fly. </h1>
+			<p>
+				if you are experienced and would like to just input your goal calories
+				to get a customized meal plan, please input any dietary restrictions you
+				might have as well as goal calories. Otherwise, we strongly recommend
+				going to the <Link to="/bmr">BMR calculator page</Link> first.
+			</p>
 			<section className="controls">
 				<fieldset>
 					<h2>select your dietary restrictions.</h2>
-
 					<legend>Diet Restrictions</legend>
 					<form>
 						<select
@@ -71,12 +76,13 @@ const SearchPage = () => {
 					<input
 						type="number"
 						placeholder="calories - e.g. 2000"
-						onChange={handleChange}
+						onChange={handleChangeCalories}
 					/>
+					<br /> <br />
 					<Button
 						className="Btn"
 						size="medium"
-						variant="contained"
+						variant="outlined"
 						onClick={getMealData}
 					>
 						Get daily meal plan
