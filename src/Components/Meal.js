@@ -1,6 +1,5 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
-import { Card } from '@mui/material';
 
 const Meal = ({ meal }) => {
 	const [images, setImages] = useState('');

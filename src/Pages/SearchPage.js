@@ -5,6 +5,7 @@ import { Button } from '@mui/material';
 import SendIcon from '@mui/icons-material/Send';
 import BMRcalculator from './BMRcalculator';
 import { Link } from 'react-router-dom';
+import RestaurantIcon from '@mui/icons-material/Restaurant';
 
 const SearchPage = () => {
 	const [mealData, setMealData] = useState('');
@@ -37,13 +38,16 @@ const SearchPage = () => {
 			.catch(() => {
 				console.log('error');
 			});
-
+		setTimeout(() => {
+			document.getElementById('nutrients').scrollIntoView();
+		}, 100);
 		// console.log(mealData);
 	}
 
 	return (
 		<div className="mealplannerpage">
-			<h1>meal planning on the fly. </h1>
+			<h1>you are what you eat. </h1>
+			<h2>meal planning on the fly.</h2>
 			<p>
 				if you are experienced and would like to just input your goal calories
 				to get a customized meal plan, please input any dietary restrictions you
@@ -76,14 +80,17 @@ const SearchPage = () => {
 					<input
 						type="number"
 						placeholder="calories - e.g. 2000"
+						min="1000"
+						max="10000"
 						onChange={handleChangeCalories}
 					/>
 					<br /> <br />
 					<Button
 						className="Btn"
 						size="medium"
-						variant="outlined"
+						variant="contained"
 						onClick={getMealData}
+						endIcon={<RestaurantIcon />}
 					>
 						Get daily meal plan
 					</Button>

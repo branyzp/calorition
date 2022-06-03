@@ -43,12 +43,13 @@ video {
     height: 100%;
     object-fit: cover;
 }
+.cookingvid{
+  margin-top: -20px;
+}
 
 #logo{
   height: 15vh;
 }
-
-
 
 .NavBar{
   background-color: rgb(34, 32, 32);
@@ -64,19 +65,6 @@ video {
   font-weight: bolder;
 }
 
-
-.video-wrapper{
-    /* width: 100vw;
-    height: 100vh;
-    object-fit: cover;
-    
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    z-index: -1; */
-}
-
 li{
   list-style: none;
 }
@@ -86,11 +74,14 @@ li{
   margin-top: 15%;
   margin-left: 5%;
   color: rgb(255, 255, 255);
-
-  
 }
 
-.nutrients, .BMR-controls{
+.aboutpage{
+  color: white;
+  max-width: 45%;
+}
+
+ .BMR-controls{
   margin: 0 auto;
   max-width: 2000px;
   box-shadow: 0 4px 8px 2px rgba(77,
@@ -110,6 +101,10 @@ li{
     0.15)
 }
 
+.BMRcard{
+  margin: 0 auto;
+}
+
 .mealplannerpage, .BMRpage{
   text-align: center;
   margin-left: 14%;
@@ -118,7 +113,7 @@ li{
   margin-bottom: 3%;
 
 }
-span{
+.greentext{
   color: green;
 }
 .meals{
@@ -140,4 +135,8 @@ table,
 th,
 td {
   border: 1px solid;
+}
+
+input{
+  width: 150px;
 }

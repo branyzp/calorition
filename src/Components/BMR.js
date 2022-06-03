@@ -12,13 +12,14 @@ const BMR = ({ calculatedbmr, goalmetabolicrate, goal, goalDifference }) => {
 	};
 
 	return (
-		<div className="BMRcard">
+		<div className="BMRcard" id="BMRcard">
 			<h1>
-				your BMR is <span>{calculatedbmr}</span> calories/day. <hr />
-				your goal is : <span>{goal}</span>
+				your BMR is <span className="greentext">{calculatedbmr}</span>{' '}
+				calories/day. <hr />
+				your goal is : <span className="greentext">{goal}</span>
 				<hr />
 				your targeted goal will aim for a difference of{' '}
-				<span>{goalDifference}</span> calories/day.
+				<span className="greentext">{goalDifference}</span> calories/day.
 			</h1>
 			<p>daily caloric needs based on activity level</p>
 			<table>
@@ -61,9 +62,17 @@ const BMR = ({ calculatedbmr, goalmetabolicrate, goal, goalDifference }) => {
 					</tr>
 				</tbody>
 			</table>
-			<br />
-			<br />
-			<Link to="/search">Meal Planner</Link>
+
+			<p>
+				<b>Exercise:</b> 15-30 minutes of elevated heart rate activity. <br />
+				<b>Intense exercise:</b> 45-120 minutes of elevated heart rate activity.
+				<br />
+				<b>Very intense exercise:</b> 2+ hours of elevated heart rate activity.
+			</p>
+
+			<p>
+				proceed to <Link to="/search">Meal Planner page</Link>
+			</p>
 		</div>
 	);
 };

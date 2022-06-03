@@ -2,8 +2,11 @@ import React from 'react';
 
 const About = () => {
 	return (
-		<div>
-			<h1>about calorition</h1>
+		<div className="aboutpage">
+			<video className="cookingvid" playsInline muted autoPlay loop>
+				<source src="https://i.imgur.com/uhIjcqC.mp4" type="video/mp4" />
+			</video>
+			{/* <h1>about calorition</h1> */}
 			<h2>
 				calorition is a nutrition app built towards building the connection
 				between people who are new to nutrition and the nutrition knowledge
