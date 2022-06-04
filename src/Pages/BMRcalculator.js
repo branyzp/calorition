@@ -114,11 +114,11 @@ const BMRcalculator = () => {
 							H refers to height in centimetres and <br />A refers to age in
 							years.
 						</p>
+						<hr />
 						<h3>
 							<strong>Variables affecting BMR </strong>
 						</h3>
 						<section className="bmrVariables">
-							<br />
 							<strong>Muscle Mass</strong> – Aerobic exercises, such as running
 							or cycling, have no effect on BMR. However, anaerobic exercises,
 							such as weight-lifting, indirectly lead to a higher BMR because
