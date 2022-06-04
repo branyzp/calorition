@@ -11,10 +11,10 @@ const Navbar = () => {
 			<Link className="NavBarLink" to="/about">
 				About
 			</Link>
-			<Link className="NavBarLink" to="/bmr">
+			<Link className="NavBarLink" to="/BMR Calculator">
 				BMR Calculator
 			</Link>
-			<Link className="NavBarLink" to="/mealplan">
+			<Link className="NavBarLink" to="/Meal Planner">
 				Mealplanning
 			</Link>
 		</div>

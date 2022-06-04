@@ -58,9 +58,9 @@ const MealList = ({ mealData }) => {
 
 				<ul>
 					<li>calories: {nutrients?.calories?.toFixed(0)}</li>
-					<li>carbohydrates: {nutrients?.carbohydrates}</li>
-					<li>fat: {nutrients?.fat}</li>
-					<li>protein: {nutrients?.protein}</li>
+					<li>carbohydrates: {nutrients?.carbohydrates.toFixed(0)}</li>
+					<li>fat: {nutrients?.fat.toFixed(0)}</li>
+					<li>protein: {nutrients?.protein.toFixed(0)}</li>
 				</ul>
 			</section>
 			<section id="meals" className="meals">

@@ -2,7 +2,7 @@ import './App.css';
 
 import Home from './Pages/Home';
 import About from './Pages/About';
-import React, { useState } from 'react';
+import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navbar from './Components/Navbar';
 import SearchPage from './Pages/SearchPage';
@@ -16,9 +16,9 @@ function App() {
 
 				<Routes>
 					<Route path="/" element={<Home />} />
-					<Route path="about" element={<About />} />
-					<Route path="mealplan" element={<SearchPage />} />
-					<Route path="bmr" element={<BMRcalculator />} />
+					<Route path="About" element={<About />} />
+					<Route path="Meal%20Planner" element={<SearchPage />} />
+					<Route path="BMR%20Calculator" element={<BMRcalculator />} />
 				</Routes>
 			</BrowserRouter>
 		</>

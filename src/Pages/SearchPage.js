@@ -12,7 +12,7 @@ const SearchPage = () => {
 	const [calories, setCalories] = useState(2000);
 	const [diet, setDiet] = useState(null);
 
-	const API_KEY = process.env.REACT_APP_API_KEY2;
+	const API_KEY = process.env.REACT_APP_API_KEY3;
 	const MEALPLANNERDAY_URL = `https://api.spoonacular.com/mealplanner/generate?apiKey=${API_KEY}&timeFrame=day&targetCalories=${calories}&diet=${diet}`;
 
 	// console.log('API Key is ' + API_KEY);
@@ -24,8 +24,6 @@ const SearchPage = () => {
 
 	const handleChangeDiet = (e) => {
 		setDiet(e.target.value);
-
-		console.log('diet - ' + e.target.value);
 	};
 
 	function getMealData() {
@@ -57,7 +55,9 @@ const SearchPage = () => {
 			<section className="controls">
 				<fieldset>
 					<h2>select your dietary restrictions.</h2>
-					<legend>Diet Restrictions</legend>
+					<legend>
+						<strong>Diet Restrictions</strong>
+					</legend>
 					<form>
 						<select
 							onChange={handleChangeDiet}
@@ -75,7 +75,9 @@ const SearchPage = () => {
 					</form>
 				</fieldset>
 				<fieldset>
-					<legend>Calorie Count</legend>
+					<legend>
+						<strong>Calorie Count</strong>
+					</legend>
 					<h2>select your desired daily calorie count.</h2>
 					<input
 						type="number"
