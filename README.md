@@ -16,6 +16,12 @@ Thus, calorition was created. Please enjoy.
 - Custom macronutrients are displayed to the user for logging their macros should they choose to do so
 - Generated meal cards include images of the meal, preparation time, number of servings and recipe
 
+### Technologies used
+- HTML
+- CSS
+- JS
+- ReactJS
+
 ### Packages
 - [create-react-app](https://github.com/facebook/create-react-app)
 - [material-ui](https://material-ui.com/) - Google's Material Design utilized in React components
