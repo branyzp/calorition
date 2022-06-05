@@ -91,6 +91,10 @@ const SearchPage = () => {
 					<br /> <br />
 					<Button
 						sx={{
+							':hover': {
+								bgcolor: 'white',
+								color: 'black',
+							},
 							backgroundColor: 'black',
 						}}
 						className="Btn"
