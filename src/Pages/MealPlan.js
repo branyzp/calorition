@@ -35,7 +35,7 @@ const SearchPage = () => {
 				console.log('error');
 			});
 		setTimeout(() => {
-			document.getElementById('meals').scrollIntoView();
+			document.getElementById('meals').scrollIntoView(false);
 		}, 1000);
 		// console.log(mealData);
 	}
