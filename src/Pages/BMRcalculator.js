@@ -1,11 +1,8 @@
-import { useTabContext } from '@mui/base';
-import { AlertTitle, Button } from '@mui/material';
+import { Button } from '@mui/material';
 import React from 'react';
 import { useState } from 'react';
 import BMR from '../Components/BMR';
 import AccessibilityIcon from '@mui/icons-material/Accessibility';
-import { Alert } from '@mui/material';
-import { Stack } from '@mui/material';
 
 const BMRcalculator = () => {
 	const [height, setHeight] = useState('');

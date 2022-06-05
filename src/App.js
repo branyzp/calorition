@@ -5,7 +5,7 @@ import About from './Pages/About';
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navbar from './Components/Navbar';
-import SearchPage from './Pages/SearchPage';
+import MealPlan from './Pages/MealPlan';
 import BMRcalculator from './Pages/BMRcalculator';
 
 function App() {
@@ -13,11 +13,10 @@ function App() {
 		<>
 			<BrowserRouter>
 				<Navbar />
-
 				<Routes>
 					<Route path="/" element={<Home />} />
 					<Route path="About" element={<About />} />
-					<Route path="Meal%20Planner" element={<SearchPage />} />
+					<Route path="Meal%20Planner" element={<MealPlan />} />
 					<Route path="BMR%20Calculator" element={<BMRcalculator />} />
 				</Routes>
 			</BrowserRouter>
