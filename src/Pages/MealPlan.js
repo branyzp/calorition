@@ -10,7 +10,7 @@ const SearchPage = () => {
 	const [calories, setCalories] = useState(2000);
 	const [diet, setDiet] = useState(null);
 
-	const API_KEY = process.env.REACT_APP_API_KEY3;
+	const API_KEY = process.env.REACT_APP_API_KEY;
 	const MEALPLANNERDAY_URL = `https://api.spoonacular.com/mealplanner/generate?apiKey=${API_KEY}&timeFrame=day&targetCalories=${calories}&diet=${diet}`;
 
 	// console.log('API Key is ' + API_KEY);

@@ -1,7 +1,6 @@
 import React from 'react';
 import Meal from './Meal';
-
-import * as echarts from 'echarts';
+// import PieChart from './PieChart';
 
 // var chartDom = document.getElementById('main');
 // var myChart = echarts.init(chartDom);
@@ -62,6 +61,7 @@ const MealList = ({ mealData }) => {
 					<li>fat: {nutrients?.fat.toFixed(0)}g</li>
 					<li>protein: {nutrients?.protein.toFixed(0)}g</li>
 				</ul>
+				{/* <PieChart /> */}
 			</section>
 			<section id="meals" className="meals">
 				{mealData.meals.map((meal) => {

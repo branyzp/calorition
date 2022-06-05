@@ -5,9 +5,9 @@ const Meal = ({ meal }) => {
 	const [images, setImages] = useState('');
 	const [mealType, setMealType] = useState('');
 
-	const API_KEY = process.env.REACT_APP_API_KEY3;
+	const API_KEY = process.env.REACT_APP_API_KEY;
 	const FOOD_ID_URL = `https://api.spoonacular.com/recipes/${meal.id}/information?apiKey=${API_KEY}&includeNutrition=false`;
-	console.log(FOOD_ID_URL);
+	// console.log(FOOD_ID_URL);
 
 	useEffect(() => {
 		fetch(FOOD_ID_URL)
@@ -28,7 +28,7 @@ const Meal = ({ meal }) => {
 				<li>Number of servings: {meal?.servings}</li>
 			</ul>
 
-			<a className='link' href={meal?.sourceUrl} target="_blank">
+			<a className="link" href={meal?.sourceUrl} target="_blank">
 				Go to recipe
 			</a>
 		</div>
