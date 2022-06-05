@@ -212,6 +212,9 @@ const BMRcalculator = () => {
 						</select>
 						<br /> <br />
 						<Button
+							sx={{
+								backgroundColor: 'black',
+							}}
 							className="Btn"
 							size="medium"
 							variant="contained"
