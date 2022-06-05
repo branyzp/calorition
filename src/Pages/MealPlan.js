@@ -50,7 +50,8 @@ const SearchPage = () => {
 				if you are experienced and would like to just input your goal calories
 				to get a customized meal plan, please input any dietary restrictions you
 				might have as well as goal calories. Otherwise, we strongly recommend
-				going to the <Link to="/bmr">BMR calculator page</Link> first.
+				going to the <Link to="/BMR%20Calculator">BMR calculator page</Link>{' '}
+				first.
 			</p>
 			<section className="controls">
 				<fieldset>
