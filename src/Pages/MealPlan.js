@@ -1,9 +1,7 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { useState } from 'react';
 import MealList from '../Components/MealList';
 import { Button } from '@mui/material';
-import SendIcon from '@mui/icons-material/Send';
-import BMRcalculator from './BMRcalculator';
 import { Link } from 'react-router-dom';
 import RestaurantIcon from '@mui/icons-material/Restaurant';
 
@@ -50,8 +48,11 @@ const SearchPage = () => {
 				if you are experienced and would like to just input your goal calories
 				to get a customized meal plan, please input any dietary restrictions you
 				might have as well as goal calories. Otherwise, we strongly recommend
-				going to the <Link to="/BMR%20Calculator">BMR calculator page</Link>{' '}
-				first.
+				going to the{' '}
+				<Link className="link" to="/BMR%20Calculator">
+					BMR calculator
+				</Link>{' '}
+				page first.
 			</p>
 			<section className="controls">
 				<fieldset>

@@ -28,7 +28,7 @@ const Meal = ({ meal }) => {
 				<li>Number of servings: {meal?.servings}</li>
 			</ul>
 
-			<a href={meal?.sourceUrl} target="_blank">
+			<a className='link' href={meal?.sourceUrl} target="_blank">
 				Go to recipe
 			</a>
 		</div>

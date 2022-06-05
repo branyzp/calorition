@@ -23,7 +23,7 @@ const BMR = ({ calculatedbmr, goalmetabolicrate, goal, goalDifference }) => {
 			</h1>
 			<p>
 				please see table for your own daily caloric needs based on activity
-				level
+				level below
 			</p>
 			<table>
 				<thead>
@@ -74,9 +74,12 @@ const BMR = ({ calculatedbmr, goalmetabolicrate, goal, goalDifference }) => {
 			</p>
 
 			<p>
-				now that you know what your TDEE is, proceed to{' '}
-				<Link to="/Meal%20Planner">Meal Planner page</Link> and input in the
-				calories to begin generating your own customized meal plan!
+				now that you know what your TDEE is, proceed to <br />
+				<Link className="link" to="/Meal%20Planner">
+					Meal Planner page
+				</Link>{' '}
+				and input in the calories to begin generating your own customized meal
+				plan!
 			</p>
 		</div>
 	);
