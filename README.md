@@ -6,7 +6,7 @@ A nutrition app created using Create-React-App and Material UI. Uses data fetche
 
 I came up with this project while learning ReactJS, where I found that not many people understood the importance or logic of calorie counting and the role it plays in our daily lives. People were constantly telling me that they could not progress in their body goals, be it losing fat or gaining muscle. 
 
-I thought of creating an app that would be both informative, yet not too dry to the point where people would give up reading mid-way. It is my sincerest hope that this app can achieve it's goal of educating users on nutrition in some small way or another.
+I thought of creating an app that would be both informative, yet not too dry to the point where people would give up reading mid-way. It is my sincerest hope that this app can achieve its goal of educating users on nutrition in some small way or another.
 
 Thus, calorition was created. Please enjoy.
 
