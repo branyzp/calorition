@@ -1,70 +1,57 @@
-# Getting Started with Create React App
+# calorition - powered by Spoonacular API
+![Image of app](https://i.imgur.com/s48EraA.png)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
+A nutrition app created using Create-React-App and Material UI. Uses data fetched from [Spoonacular](https://spoonacular.com/food-api). [Click here for the live version](https://calorition.vercel.app/)
 
-## Available Scripts
+### Features
+- Calculates Basal Metabolic Rate (BMR) and Total Daily Energy Expenditure (TDEE) based on an individual's height, weight, age and lifestyle as factors
+- Generates a meal plan for the individual based on their dietary preferences and restrictions, using prior BMR & TDEE values as data points
+- Custom macronutrients are displayed to the user for logging their macros should they choose to do so
+- Generated meal cards include images of the meal, preparation time, number of servings and recipe
 
-In the project directory, you can run:
+### Packages
+- [create-react-app](https://github.com/facebook/create-react-app)
+- [material-ui](https://material-ui.com/) - Google's Material Design utilized in React components
 
-### `npm start`
+## Spoonacular API
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Structure
 
-### `npm test`
+### Components
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```
+├── App.css
+├── App.js
+├── App.test.js
+├── Components
+│   ├── BMR.js
+│   ├── Meal.js
+│   ├── MealList.js
+│   └── Navbar.js
+├── Pages
+│   ├── About.js
+│   ├── BMRcalculator.js
+│   ├── Home.js
+│   └── MealPlan.js
+├── index.css
+├── index.js
+├── logo.svg
+├── reportWebVitals.js
+└── setupTests.js
 
-### `npm run build`
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Work In Progress
+- Charting using [Apache Echarts](https://echarts.apache.org/en/index.html)
+- Food joke generator to lighten the mood
+- Food facts generator
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Credits
+- Favicon from [Favicon.io](https://favicon.io/)
+- [Spoonacular API](https://spoonacular.com/food-api)
+- BMR formula and information from [Calculator.net](https://www.calculator.net/bmr-calculator.html)
+- Qingyun for project idea
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
