@@ -27,7 +27,41 @@ Thus, calorition was created. Please enjoy.
 - [material-ui](https://material-ui.com/) - Google's Material Design utilized in React components
 
 ## Spoonacular API
+### Get Meal Plan
 
+```
+GET https://api.spoonacular.com/mealplanner/generate
+```
+
+Parameters
+- timeFrame -> Type: String
+            -> Example: day
+            -> Description: Either one 'day' or entire 'week'
+            
+- targetCalories -> Type: number
+                 -> Example: 2000
+                 -> Description: Caloric target for each day, as close as possible
+
+- diet -> Type: string
+       -> Example: vegetarian
+       -> Description: Enter a diet that the meal plan should adhere to
+       
+### Get Photos for Meal Cards
+
+
+Parameters
+```
+GET https://api.spoonacular.com/recipes/{id}/information
+```
+
+Parameters
+- id -> Type: number
+     -> Example: 716429
+     -> Description: id of the recipe
+     
+- includeNutrition -> Type: boolean
+                   -> Example: false
+                   -> Description: Include nutrition data in the recipe
 
 ## Structure
 
@@ -59,6 +93,7 @@ Thus, calorition was created. Please enjoy.
 - Charting using [Apache Echarts](https://echarts.apache.org/en/index.html)
 - Food joke generator to lighten the mood
 - Food facts generator
+- Dark & Light Themes with useContext
 
 ## Credits
 - Favicon from [Favicon.io](https://favicon.io/)
