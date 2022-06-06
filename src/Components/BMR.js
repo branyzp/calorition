@@ -27,9 +27,7 @@ const BMR = ({ calculatedbmr, goalmetabolicrate, goal, goalDifference }) => {
 					<tr>
 						<th>activity level</th>
 						<th>
-							calories
-							<br /> (TDEE + goal) <br />
-							input this into the meal planner!
+							target calories (TDEE + goal) <br />
 						</th>
 					</tr>
 				</thead>

@@ -42,8 +42,10 @@ const SearchPage = () => {
 
 	return (
 		<div className="mealplannerpage">
-			<h1>you are what you eat. </h1>
-			<h2>meal planning on the fly.</h2>
+			<h1>
+				<em>meal planning on the fly. </em>
+			</h1>
+
 			<p>
 				if you are experienced and would like to just input your goal calories
 				to get a customized meal plan, please input any dietary restrictions you
