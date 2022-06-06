@@ -101,4 +101,9 @@ Parameters
 - BMR formula and information from [Calculator.net](https://www.calculator.net/bmr-calculator.html)
 - Qingyun for project idea
 
+### Areas to Improve
+- Calculation of BMR (useState) should carry over to the meal planner page
+- Allow for user to do step 1 first before step 2 (user confusion)
+- App Flow
+
 
